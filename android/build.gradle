@@ -32,7 +32,9 @@ android {
         namespace 'com.example.video_compress'
     }
     
-    compileSdk 34
+    // 16KB 호환을 위한 최신 SDK 및 NDK 설정
+    compileSdk 36
+    ndkVersion "28.0.12433566" 
 
     compileOptions {
         sourceCompatibility 1.8
